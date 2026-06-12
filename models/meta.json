@@ -1,0 +1,103 @@
+{
+  "best_model_name": "XGBoost (Tuned)",
+  "test_r2": 0.9828,
+  "test_rmse": 0.7483,
+  "test_mae": 0.4138,
+  "use_log_transform": true,
+  "selected_features": [
+    "trip_distance",
+    "is_night",
+    "passenger_count",
+    "pickup_day",
+    "pickup_latitude",
+    "pickup_month",
+    "pickup_hour",
+    "time_of_day",
+    "VendorID",
+    "dropoff_longitude",
+    "avg_speed_mph",
+    "fare_per_mile",
+    "payment_type",
+    "fare_per_minute",
+    "direction_bearing",
+    "am_pm",
+    "pickup_longitude",
+    "is_weekend",
+    "dropoff_latitude",
+    "trip_duration_min",
+    "is_rush_hour",
+    "pickup_weekday"
+  ],
+  "all_model_results": [
+    {
+      "Model": "XGBoost (Tuned)",
+      "R2": 0.9827883137098993,
+      "RMSE": 0.7483267565986037,
+      "MAE": 0.41383110356676717,
+      "MAPE": 3.1158548689898855
+    },
+    {
+      "Model": "XGBoost",
+      "R2": 0.9827579761669748,
+      "RMSE": 0.7489859714959614,
+      "MAE": 0.41280587156390286,
+      "MAPE": 3.0971962760141447
+    },
+    {
+      "Model": "Gradient Boosting",
+      "R2": 0.9820262643516874,
+      "RMSE": 0.7647134660726481,
+      "MAE": 0.42636023185209365,
+      "MAPE": 3.2047457782390474
+    },
+    {
+      "Model": "Random Forest",
+      "R2": 0.981453099032494,
+      "RMSE": 0.7768107722467528,
+      "MAE": 0.40157372228487354,
+      "MAPE": 2.986354860946096
+    },
+    {
+      "Model": "Extra Trees",
+      "R2": 0.9814085349170036,
+      "RMSE": 0.7777434648617425,
+      "MAE": 0.4290309915526172,
+      "MAPE": 3.273573425911156
+    },
+    {
+      "Model": "Random Forest (Tuned)",
+      "R2": 0.9779618988026796,
+      "RMSE": 0.8467723129809103,
+      "MAE": 0.48767421604027866,
+      "MAPE": 3.7078281407027127
+    },
+    {
+      "Model": "Linear Regression",
+      "R2": 0.9749146363801081,
+      "RMSE": 0.9034201298925697,
+      "MAE": 0.48764694104672834,
+      "MAPE": 3.6748665293743805
+    },
+    {
+      "Model": "Ridge Regression",
+      "R2": 0.9749122907934475,
+      "RMSE": 0.9034623656900057,
+      "MAE": 0.4875420125630126,
+      "MAPE": 3.6743728231595894
+    },
+    {
+      "Model": "Decision Tree",
+      "R2": 0.9737659164064493,
+      "RMSE": 0.9238735037752795,
+      "MAE": 0.5341537110189838,
+      "MAPE": 4.048969584874348
+    },
+    {
+      "Model": "Lasso Regression",
+      "R2": 0.9301522689239416,
+      "RMSE": 1.5074944241513726,
+      "MAE": 0.8603223578905447,
+      "MAPE": 6.344053872127965
+    }
+  ]
+}

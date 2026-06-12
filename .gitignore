@@ -1,0 +1,9 @@
+data/*.csv
+data/*.parquet
+taxi_data.csv
+__pycache__/
+*.pyc
+venv/
+.env
+.DS_Store
+Thumbs.db

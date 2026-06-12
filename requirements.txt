@@ -1,0 +1,36 @@
+# === FILE: requirements.txt ===
+# ============================================================
+# Project : TripFare — Predicting Urban Taxi Fare with ML
+# File    : requirements.txt
+# Purpose : All Python dependencies with pinned versions,
+#           grouped by purpose for clarity and reproducibility.
+# ============================================================
+
+# ── Core Data Science ──────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+
+# ── Machine Learning ───────────────────────────────────────
+scikit-learn==1.4.2
+xgboost==2.0.3
+joblib==1.4.2
+
+# ── Visualisation (training/EDA plots) ────────────────────
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# ── Streamlit App & Interactive Charts ────────────────────
+streamlit==1.35.0
+plotly==5.22.0
+streamlit-folium==0.20.0
+folium==0.16.0
+
+# ── Geospatial & Timezone ─────────────────────────────────
+pytz==2024.1
+
+# ── Dataset Download ──────────────────────────────────────
+gdown==5.2.0
+
+# ── Utilities ─────────────────────────────────────────────
+tqdm==4.66.4
