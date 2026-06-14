@@ -66,8 +66,8 @@ The best-performing model is deployed through an interactive **Streamlit dashboa
 ![EDA Dashboard](Screenshots/eda.png)
 
 ### 🤖 Model Performance — Leaderboard
-![Model Performance 1](./Screenshots/models_1.png)
-![Model Performance 2](./Screenshots/models_2.png)
+![Model Performance 1](./Screenshots/model_1.png)
+![Model Performance 2](./Screenshots/model_2.png)
 
 ### 🎯 Fare Predictor — Live Prediction
 ![Fare Prediction](Screenshots/predict.png)
