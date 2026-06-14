@@ -1701,15 +1701,7 @@ elif page == "🎯 Predict Fare":
         predict_btn = st.button("Predict Fare", use_container_width=True)
 
     with right:
-        st.markdown(
-            """
-            <div class="fare-card">
-                <div class="fare-label">Prediction output will appear here</div>
-                <div class="fare-value">--</div>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
+        st.empty()
 
     if predict_btn:
         input_dict = {
@@ -1740,22 +1732,22 @@ elif page == "🎯 Predict Fare":
             pred = float(best_model.predict(X)[0])
             pred = max(0.0, pred)
 
-            st.markdown("---")
-            st.markdown(
-                f"""
-                <div class="fare-card">
-                    <div class="fare-label">Predicted Taxi Fare</div>
-                    <div class="fare-value">${pred:.2f}</div>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
+            with right:
+                st.markdown(
+                    f"""
+                    <div class="fare-card">
+                        <div class="fare-label">Predicted Taxi Fare</div>
+                        <div class="fare-value">${pred:.2f}</div>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
 
-            breakdown = pd.DataFrame({
-                "Feature": ["Trip distance", "Pickup hour", "Weekend", "Passenger count", "Payment type"],
-                "Value": [round(trip_distance, 2), pickup_hour, is_weekend, passenger_count, payment_type]
-            })
-            st.dataframe(breakdown, use_container_width=True, hide_index=True)
+                breakdown = pd.DataFrame({
+                    "Feature": ["Trip distance", "Pickup hour", "Weekend", "Passenger count", "Payment type"],
+                    "Value": [round(trip_distance, 2), pickup_hour, is_weekend, passenger_count, payment_type]
+                })
+                st.dataframe(breakdown, use_container_width=True, hide_index=True)
 
         except Exception as e:
             st.error(f"Prediction failed: {e}")
