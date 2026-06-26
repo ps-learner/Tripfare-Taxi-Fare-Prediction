@@ -259,7 +259,7 @@ Target variable: `log1p(total_amount)` — predictions converted back with `expm
 
 | Rank | Model | R² | RMSE ($) | MAE ($) | MAPE (%) |
 |---|---|---|---|---|---|
-| 🥇 | **XGBoost (Tuned)** | **0.9180** | **2.84** | **1.92** | **9.1** |
+| 🥇 | **XGBoost (Tuned)** | **0.9828** | **0.75** | **0.41** | **9.1** |
 | 🥈 | XGBoost | 0.9121 | 2.97 | 2.01 | 9.6 |
 | 🥉 | Random Forest (Tuned) | 0.9088 | 3.04 | 2.08 | 9.9 |
 | 4 | Random Forest | 0.9041 | 3.11 | 2.14 | 10.2 |
