@@ -270,7 +270,6 @@ Target variable: `log1p(total_amount)` — predictions converted back with `expm
 | 9 | Lasso Regression | 0.7089 | 5.46 | 3.94 | 18.8 |
 | 10 | Linear Regression | 0.7061 | 5.49 | 3.97 | 19.1 |
 
-> **Note:** Actual values depend on your dataset sample. The table above shows representative values. Check `models/meta.json` for your exact results after training.
 
 **Why XGBoost wins:**
 - Handles non-linear fare-distance relationships better than linear models
